@@ -1,0 +1,79 @@
+[information]
+
+filename=mtmine.mrp
+appname=我的世界
+appid=30107
+version=1001
+visible=1
+cpu=3
+vendor=无尽时空
+description=在我的世界里挖呀挖呀挖,尽享采集与合成的乐趣,sohehe4.ysepan.com
+include=${MRPBUILDER_HOME}\..\include\, sfw\mrc\, src\
+config=mtk240
+#,mtkt240
+
+
+[config_mtk240]
+define=DEMO_DEBUG,CONFIG_240
+output=bin\mtmine.mrp
+bmp_mode=normal
+#c_compiler=thumb
+plat=mtk
+
+[config_game_mtk240]
+plugin=app
+
+[config_mtkt240]
+define=DEMO_DEBUG,CONFIG_240
+output=bin\tghcdjy.mrp
+bmp_mode=normal
+c_compiler=thumb
+
+[files_mtk240]
+file01 = game_mtk240.ext(name=game.ext)
+#file02 = ${MRPBUILDER_HOME}\plugins\skyfont\skyfont_mtk.mrp
+file03 = ${MRPBUILDER_HOME}\plugins\mainext\mainext_mtk_d.mrp
+
+[files_game_mtk240]
+file05 = ${MRPBUILDER_HOME}\plugins\skyfont\skyfont_mtk.lib
+file09 = ${MRPBUILDER_HOME}\security\mrpverify_mtk_dbg.lib
+
+file38 = main.c
+file39 = src\xl_debug.c
+file40 = src\xl_bmp.c
+file41 = src\fontRead.c
+file42 = src\mrc_graphics.c
+file43 = src\mrc_android.c
+file44 = src\mpc.c
+file45 = src\mrc_tool.c
+file46 = sfw\mrc\mrc_win.c
+
+[files]
+
+file60=assets\font.mrp
+file61=assets\img_bridge.bmp
+file62=assets\img_cactus.bmp
+file63=assets\img_dead_tree.bmp
+file64=assets\img_fallen_tree.bmp
+file65=assets\img_ground.bmp
+file66=assets\img_hole.bmp
+file67=assets\img_ice.bmp
+file68=assets\img_ladder.bmp
+file69=assets\img_pickaxe.bmp
+file70=assets\img_planks.bmp
+file71=assets\img_player_e.bmp
+file72=assets\img_player_n.bmp
+file73=assets\img_player_ne.bmp
+file74=assets\img_player_nw.bmp
+file75=assets\img_player_s.bmp
+file76=assets\img_player_se.bmp
+file77=assets\img_player_sw.bmp
+file78=assets\img_player_w.bmp
+file79=assets\img_rock.bmp
+file80=assets\img_short_grass.bmp
+file81=assets\img_stick.bmp
+file82=assets\img_stone.bmp
+file83=assets\img_tall_grass.bmp
+file84=assets\img_tree.bmp
+file85=assets\img_water.bmp
+file86=assets\img_workbench.bmp
